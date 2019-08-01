@@ -1,0 +1,34 @@
+git status 			# show which files are in staging area or committed - red files are not staged green files are
+git add <filename> 		# adds a file to the staging area
+git add .			# adds all files in current dir to staging area - this is also how you add changes in a filet
+git reset .			# regretted an add? use the git reset <filename> to regret
+git rm --cached <filename>	# removes a file from staging area
+git commit -m "message here"	# commits all files in staging area with message "message here" to the master branch ('insertions' refers to lines)
+git log				# shows all commits
+git log --oneline		# shows all commits short version
+git checkout <id>		# shows commit in history
+git revert <id>			# reverts to specific time in commithistory - without deleting any commits
+git reset <id> 			# BE CAREFULL goes back in time and deletes commits after the stated point
+git branch <branch-name>	# create branch with name branch-name
+git branch -a 			# shows branches
+git checkout <branch-name>	# switches to the branch with name branch-name
+git checkout master		# switch back to the master branch
+git branch -d <branch-name>	# deletes branch with name branch-name
+
+https://www.youtube.com/watch?v=QV0kVNvkMxc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=8
+
+git init			# makes the folder you init into a github folder
+git push			# pushes the local repo to a remote one like github.com
+git pull			# pulls down the latest changes to local repo
+git clone			# downloads and clones a remote repo
+
+git config --global user.name 'My Name'		# adds name to local repo
+git config --global user.email 'my@mail.com'	# adds mail to local repor
+
+ignore (not a command) 		# create the file .gitignore in the folder. Add file names or directories in the file - plain text . to ignore folder, add: /dir to the ignorefile
+
+git remote add origin https://github.com/jevelopment/gitcheatsheet.git	# adds remote repo
+git push -u origin master	# pushes the local repo to the remote repo
+
+git pull https://github.com/jevelopment/gitcheatsheet.git 		# downloads changes from remote repo
+ 
