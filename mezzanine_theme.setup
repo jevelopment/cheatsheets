@@ -1,7 +1,30 @@
-this is where i am
+pip install mezzanine
+mezzanine-project myproject
+cd myproject
+python manage.py createdb
+python manage.py collectstatic  
+python manage.py collecttemplates  
+
+# in some way get the moderna files to your project
+cp -r moderna/ ~/Dev/Django/mezz_blog/myproject/
+
+# in settings add:
+os.path.join(PROJECT_ROOT, "moderna/templates"),
+
+#still in settings also add (to installed apps):
+"moderna";
+
+#again: 
+python manage.py collectstatic  
+
+# Run the web server
+$ python manage.py runserver
+
+sources:
 
 https://www.pythonanywhere.com/forums/topic/1195/
 
 https://github.com/thecodinghouse/mezzanine-themes
 
 https://stackoverflow.com/questions/28024595/how-to-deploy-installing-mezzanine-theme#28024596
+https://askubuntu.com/questions/574508/how-to-deploy-mezzanine-mysql
