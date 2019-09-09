@@ -24,3 +24,12 @@ Conclusion
 
 It's super easy to get set up with Python virtual environments, and the benefits are pretty clear. You'll be able to
 compartmentalize your projects, and keep things from conflicting. It's also easier to manage Python package versions as you work.
+
+
+Virt env. cannot be deleted :
+
+"That's it! There is no command for deleting your virtual environment. Simply deactivate it and rid your application of its
+artifacts by recursively removing it."
+
+source: 
+https://stackoverflow.com/questions/11005457/how-do-i-remove-delete-a-virtualenv
