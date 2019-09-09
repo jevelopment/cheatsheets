@@ -6,17 +6,21 @@ $ python3 -m venv /path/to/virtual/environment
 
 $ source your-broject/bin/activate
 
-Now, you're working with the Python install from your virtual environment, instead of the system wide one. Anything you do now, should reside in your project folder. When you're done, just run deactivate to exit the virtual Python.
+Now, you're working with the Python install from your virtual environment, instead of the system wide one. Anything you do now,
+should reside in your project folder. When you're done, just run deactivate to exit the virtual Python.
 
 To start, create your environment with the virtualenv command. You'll also need to tell it to use Python 3 with the -p flag.
 
+
 $ virtualenv -p python3 /path/to/virtual/environment
 
-This will take a few seconds to get itself setup with Pip and the other Python packages it includes. When it's finished, activate the environment.
+This will take a few seconds to get itself setup with Pip and the other Python packages it includes. When it's finished, activate
+the environment.
 
 $ source your-project/bin/activate
 
 Do your work inside the project directories. When you're done, use deactivate to exit the virtual environment.
 Conclusion
 
-It's super easy to get set up with Python virtual environments, and the benefits are pretty clear. You'll be able to compartmentalize your projects, and keep things from conflicting. It's also easier to manage Python package versions as you work.
+It's super easy to get set up with Python virtual environments, and the benefits are pretty clear. You'll be able to
+compartmentalize your projects, and keep things from conflicting. It's also easier to manage Python package versions as you work.
