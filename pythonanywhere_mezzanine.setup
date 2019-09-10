@@ -28,7 +28,8 @@ while "" in sys.path:
     sys.path.remove("")
 
 # specify django settings
-os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings' # Here "myproject" is the folder where the .settings file lives"
+
 
 # load default django wsgi app for Django < 1.4
 import django.core.handlers.wsgi
