@@ -9,7 +9,7 @@ python manage.py collecttemplates
 cp -r moderna/ ~/Dev/Django/mezz_blog/myproject/
 
 # in settings add:
-os.path.join(PROJECT_ROOT, "moderna/templates"),
+os.path.join(PROJECT_ROOT, "moderna/templates"), # IMPORTANT: this line must come BEFORE the other os.path... lines
 
 #still in settings also add (to installed apps):
 "moderna";
