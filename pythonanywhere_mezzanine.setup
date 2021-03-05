@@ -32,8 +32,9 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'myproject.settings' # Here "myproject" i
 
 
 # load default django wsgi app for Django < 1.4
-import django.core.handlers.wsgi
-application = django.core.handlers.wsgi.WSGIHandler()
+#IMPORTANT NOTE FROM 2020 THIS MAY BE NEED TO BE COMMENTET OUT::: IT IS COMMENTET OUT NOW WITH ## BY ME HERE TO AVOID FUTURE PROBLEMS.
+##import django.core.handlers.wsgi
+##application = django.core.handlers.wsgi.WSGIHandler()
 
 # load default django wsgi app for Django >= 1.4
 from django.core.wsgi import get_wsgi_application
@@ -43,7 +44,8 @@ application = get_wsgi_application()
 --------
 
 on the settings.py files both the local_settings.py and the normal one you have to set allowed hosts:
-["127.0.0.1", "pythonanywhereusername.pythonaywhere.com"]
+["127.0.0.1", "pythonanywhereusername.pythonaywhere.com"] YOU MAY NEED TO HAVE THE "pythonanywhereusername.pythonaywhere.com" AS THE FIRST PART OF THE LINE I.E. BEFORE LOCALHOST
+
 
 ------
 
